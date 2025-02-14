@@ -1,5 +1,25 @@
-# UMA033
+# Experiment 4: Gauss Elimination Method  
 
+## Part 2: Solving a Linear System using Gauss Elimination  
+
+### Problem Statement  
+Solve the following system of equations using **Gauss Elimination Method**:  
+
+\[
+10x + 8y - 3z + u = 16
+\]
+\[
+2x + 10y + z - 4u = 9
+\]
+\[
+3x - 4y + 10z + u = 10
+\]
+\[
+2x + 2y - 3z + 10u = 11
+\]
+
+### MATLAB Code  
+```matlab
 function x = gauss_elimination(A)
     [n, m] = size(A);
     
@@ -34,9 +54,9 @@ function x = gauss_elimination(A)
     disp(x);
 end
 
-A = [10 8 -3 2 16;
-     2 10 -1 -4 9;
-     3 -4 10 -1 10;
-     2 -2 -3 10 19];
+A = [10 8 -3 1 16;
+     2 10 1 -4 9;
+     3 -4 10 1 10;
+     2 2 -3 10 11];
 
 gauss_elimination(A);
