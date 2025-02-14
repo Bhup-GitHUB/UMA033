@@ -1,3 +1,10 @@
+# Gauss Elimination Method in MATLAB
+
+This MATLAB code solves a system of linear equations using the Gauss elimination method with partial pivoting.
+
+## Code
+
+```matlab
 A = [10, 8, -3, 1, 16;
       2, 10, 1, -4, 9;
       3, -4, 10, 1, 10;
